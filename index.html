@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Weather Forecast</title>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<h1>Прогноз погоди</h1>
+		</header>
+		<div id="cityWeather">
+			<div class="cityTitle">
+				<h2>Lviv, Ukraine</h2>
+				<div id="citySearch">
+					<!--<form>
+						<input type="search" name="search">
+					</form>-->	
+					<a href="#">Choose city<img src="image/searchimage1.png" alt="search city image" /></a>
+				</div>
+			</div>
+			<section class="currentDateWeather">
+				<h3 class="currentDate">Thursday July 2 14:00</h3>
+				<div class="currentForecast">
+					<img src="image/17.png" alt="">
+					<div class="latestMeasurementsTemperature">
+						+ 25 °C
+					</div>
+					<p class="prognosDescription">Clear sky , no clouds, sunshine</p>
+					<div class="durationOfDay">
+						<div class="sunrise">sunrise: <span>5:30</span></div>
+						<div class="sunset">sunset: <span>21:00</span></div>
+					</div>
+				</div>
+				<div class="expandedCurrentForecast">
+					<table>
+						<tr>
+							<th>Overnight</th>
+							<th>Morning</th>
+							<th>Afternoon</th>
+							<th>Evening</th>
+						</tr>
+						<tr>
+							<td><img src="image/11.png" alt="Current Forecast Picture" width="50" height="50"></td>
+							<td><img src="image/18.png" alt="Current Forecast Picture" width="50" height="50"></td>
+							<td><img src="image/12.png" alt="Current Forecast Picture" width="50" height="50"></td>
+							<td><img src="image/15.png" alt="Current Forecast Picture" width="50" height="50"></td>
+						</tr>
+						<tr>
+							<td>+ 12 °C</td>
+							<td>+ 17 °C</td>
+							<td>+ 25 °C</td>
+							<td>+ 22 °C</td>
+						</tr>
+						<tr>
+							<td>3 m/sec</td>
+							<td>3 m/sec</td>
+							<td>3 m/sec</td>
+							<td>3 m/sec</td>
+						</tr>
+						<tr>
+							<td>70%</td>
+							<td>70%</td>
+							<td>70%</td>
+							<td>70%</td>
+						</tr>
+						<tr>
+							<td>101.4 kPa</td>
+							<td>101.4 kPa</td>
+							<td>101.4 kPa</td>
+							<td>101.4 kPa</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<aside class="nextDateWeather">
+				<nav>
+					<a href="">7 days</a>
+					<a href="weekForecast.html" class="weekExpandedForecast">more</a>
+				</nav>
+				<div class="slideNextWeather">
+					<a href="" id="arrowPrew">&#9650;</a>
+					<ul>
+						<li>
+							<table>
+								<tr>
+									<td>2 Jul</td>
+									<td>+ 25 °C</td>
+									<td><img src="image/11.png" alt="Current Forecast Picture" width="30" height="30"></td>
+								</tr>
+							</table>
+						</li>
+						<li>
+							<table>
+								<tr>
+									<td>25 Sept</td>
+									<td>+ 25 °C</td>
+									<td><img src="image/12.png" alt="Current Forecast Picture" width="30" height="30"></td>
+								</tr>
+							</table>
+						</li>
+						<li>
+							<table>
+								<tr>
+									<td>3 Jul</td>
+									<td>+ 25 °C</td>
+									<td><img src="image/13.png" alt="Current Forecast Picture" width="30" height="30"></td>
+								</tr>
+							</table>
+						</li>
+						<li>
+							<table>
+								<tr>
+									<td>4 Jul</td>
+									<td>+ 25 °C</td>
+									<td><img src="image/14.png" alt="Current Forecast Picture" width="30" height="30"></td>
+								</tr>
+							</table>
+						</li>
+						<li>
+							<table>
+								<tr>
+									<td>5 Jul</td>
+									<td>+ 25 °C</td>
+									<td><img src="image/15.png" alt="Current Forecast Picture" width="30" height="30"></td>
+								</tr>
+							</table>
+						</li>
+						<li>
+							<table>
+								<tr>
+									<td>6 Jul</td>
+									<td>+ 25 °C</td>
+									<td><img src="image/16.png" alt="Current Forecast Picture" width="30" height="30"></td>
+								</tr>
+							</table>
+						</li>
+					</ul>
+					<a href="" id="arrowNext">&#9660;</a>
+				</div>
+			</aside>
+			<div class="mapWeatherUkraine">
+			
+			</div>
+		</div>
+	</body>
+</html>
