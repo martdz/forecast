@@ -3,145 +3,51 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Weather Forecast</title>
-		<link href="style.css" rel="stylesheet">
+		<meta name="keywords" content="Weather forecast, daily forecast, hourly forecast, current forecast">
+		<meta name="description" content="Weather forecast App">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+		<link href="appret.css" rel="stylesheet" media="all">
+		 <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 	</head>
 	<body>
 		<header>
-			<h1>Прогноз погоди</h1>
+			<h1>Weather Forecast</h1>
 		</header>
-		<div id="cityWeather">
-			<div class="cityTitle">
-				<h2>Lviv, Ukraine</h2>
-				<div id="citySearch">
-					<!--<form>
-						<input type="search" name="search">
-					</form>-->	
-					<a href="#">Choose city<img src="image/searchimage1.png" alt="search city image" /></a>
+		<div id="weather">
+			<div id="cityWeather">
+				<div class="cityTitle">
+					<h2></h2>
 				</div>
-			</div>
-			<section class="currentDateWeather">
-				<h3 class="currentDate">Thursday July 2 14:00</h3>
-				<div class="currentForecast">
-					<img src="image/17.png" alt="">
-					<div class="latestMeasurementsTemperature">
-						+ 25 °C
+				<section class="currentDateWeather">
+					<div class="mainWeather"></div>	
+					<div class="expandedCurrentForecast">
+						<ul></ul>
 					</div>
-					<p class="prognosDescription">Clear sky , no clouds, sunshine</p>
-					<div class="durationOfDay">
-						<div class="sunrise">sunrise: <span>5:30</span></div>
-						<div class="sunset">sunset: <span>21:00</span></div>
+				</section>
+				<aside class="nextDateWeather">
+					<nav>
+						<a href="more.html" class="weekExpandedForecast">more</a>
+					</nav>
+					<div class="slideNextWeather">
+						<a href="" id="arrowPrew">&#9650;</a>
+						<ul id="scroller"></ul>
+						<a href="" id="arrowNext">&#9660;</a>
 					</div>
-				</div>
-				<div class="expandedCurrentForecast">
-					<table>
-						<tr>
-							<th>Overnight</th>
-							<th>Morning</th>
-							<th>Afternoon</th>
-							<th>Evening</th>
-						</tr>
-						<tr>
-							<td><img src="image/11.png" alt="Current Forecast Picture" width="50" height="50"></td>
-							<td><img src="image/18.png" alt="Current Forecast Picture" width="50" height="50"></td>
-							<td><img src="image/12.png" alt="Current Forecast Picture" width="50" height="50"></td>
-							<td><img src="image/15.png" alt="Current Forecast Picture" width="50" height="50"></td>
-						</tr>
-						<tr>
-							<td>+ 12 °C</td>
-							<td>+ 17 °C</td>
-							<td>+ 25 °C</td>
-							<td>+ 22 °C</td>
-						</tr>
-						<tr>
-							<td>3 m/sec</td>
-							<td>3 m/sec</td>
-							<td>3 m/sec</td>
-							<td>3 m/sec</td>
-						</tr>
-						<tr>
-							<td>70%</td>
-							<td>70%</td>
-							<td>70%</td>
-							<td>70%</td>
-						</tr>
-						<tr>
-							<td>101.4 kPa</td>
-							<td>101.4 kPa</td>
-							<td>101.4 kPa</td>
-							<td>101.4 kPa</td>
-						</tr>
-					</table>
-				</div>
-			</section>
-			<aside class="nextDateWeather">
-				<nav>
-					<a href="">7 days</a>
-					<a href="weekForecast.html" class="weekExpandedForecast">more</a>
-				</nav>
-				<div class="slideNextWeather">
-					<a href="" id="arrowPrew">&#9650;</a>
-					<ul>
-						<li>
-							<table>
-								<tr>
-									<td>2 Jul</td>
-									<td>+ 25 °C</td>
-									<td><img src="image/11.png" alt="Current Forecast Picture" width="30" height="30"></td>
-								</tr>
-							</table>
-						</li>
-						<li>
-							<table>
-								<tr>
-									<td>25 Sept</td>
-									<td>+ 25 °C</td>
-									<td><img src="image/12.png" alt="Current Forecast Picture" width="30" height="30"></td>
-								</tr>
-							</table>
-						</li>
-						<li>
-							<table>
-								<tr>
-									<td>3 Jul</td>
-									<td>+ 25 °C</td>
-									<td><img src="image/13.png" alt="Current Forecast Picture" width="30" height="30"></td>
-								</tr>
-							</table>
-						</li>
-						<li>
-							<table>
-								<tr>
-									<td>4 Jul</td>
-									<td>+ 25 °C</td>
-									<td><img src="image/14.png" alt="Current Forecast Picture" width="30" height="30"></td>
-								</tr>
-							</table>
-						</li>
-						<li>
-							<table>
-								<tr>
-									<td>5 Jul</td>
-									<td>+ 25 °C</td>
-									<td><img src="image/15.png" alt="Current Forecast Picture" width="30" height="30"></td>
-								</tr>
-							</table>
-						</li>
-						<li>
-							<table>
-								<tr>
-									<td>6 Jul</td>
-									<td>+ 25 °C</td>
-									<td><img src="image/16.png" alt="Current Forecast Picture" width="30" height="30"></td>
-								</tr>
-							</table>
-						</li>
-					</ul>
-					<a href="" id="arrowNext">&#9660;</a>
-				</div>
-			</aside>
-			<div class="mapWeatherUkraine">
-			
+				</aside>
 			</div>
 		</div>
+		<div id="move_place">
+			<div id="cloud_1"><img src="image/01n.png" alt="cloud"></div>
+			<div id="cloud_2"><img src="image/01n.png" alt="cloud"></div>
+			<div id="cloud_3"><img src="image/01n.png" alt="cloud"></div>
+			<div id="cloud_4"><img src="image/01n.png" alt="cloud"></div>
+			<div id="cloud_5"><img src="image/01n.png" alt="cloud"></div>
+		</div>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+		<script src="app.js"></script>
 	</body>
 </html>
