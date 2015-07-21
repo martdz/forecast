@@ -29,7 +29,7 @@ body{
 	background: -webkit-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
 	background: -o-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
 	background: -moz-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
-	background: -ms-radial-gradient(30% 30%, circle,yellow 3%, white 20%, blue);
+	background: -ms-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
 	background: radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
 }
 #move_place{
@@ -43,26 +43,11 @@ body{
 	-webkit-animation: moving 50s linear infinite alternate;
 	-moz-animation: moving 50s linear infinite alternate;
 	-ms-animation: moving 50s linear infinite alternate;
-	-o-animation: moving 50s linear infinite alternate;
 	animation: moving 50s linear infinite alternate;
-}	
-@-webkit-keyframes moving{
-	from{
-		-webkit-transform:translate(500px, 0);
-		-moz-transform:translate(500px, 0);
-		-ms-transform:translate(500px, 0);
-		-o-transform:translate(500px, 0);
-		transform:translate(500px, 0);
-	}
 }
-@keyframes moving {
-	from {
-		-webkit-transform:translate(500px, 0);
-		-moz-transform:translate(500px, 0);
-		-ms-transform:translate(500px, 0);
-		-o-transform:translate(500px, 0);
-		transform:translate(500px, 0);
-	}
+@keyframes moving{
+	from {left:500px;}
+		to {left:0px;}
 }
 #cloud_1{
 	position:absolute;
