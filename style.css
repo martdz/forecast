@@ -111,7 +111,7 @@ header a:hover{
 	width:500px;
 	height:435px;
 	padding:10px;
-	background-color:white;
+	background-color: rgba(255, 255, 255, 0.9);
 	border-radius:15px;
 	overflow:hidden;
 	z-index:10000;
@@ -202,7 +202,8 @@ h3.currentDate{
 .mainWeather p{
 	font-family: Courier;
 	font-size:17px;
-	padding:5px;
+	height:17px;
+	padding:0 0 0 5px;
 	clear:both;
 	color:gray;
 }
