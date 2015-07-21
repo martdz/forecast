@@ -23,7 +23,6 @@ $(function(){
 
 		try{
 
-			// Retrive the cache
 			var cache = localStorage.weatherCache && JSON.parse(localStorage.weatherCache);
 			var cache2 = localStorage.weatherCache2 && JSON.parse(localStorage.weatherCache2);
 
