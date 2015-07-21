@@ -29,10 +29,11 @@ body{
 	background: -webkit-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
 	background: -o-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
 	background: -moz-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
+	background: -ms-radial-gradient(30% 30%, circle,yellow 3%, white 20%, blue);
 	background: radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
 }
 #move_place{
-	position: relative;
+	position: absolute;
 	top: 100px;
 	left: 35px;
 	width: 500px;
@@ -257,6 +258,7 @@ aside ul li{
 	border-bottom:1px solid rgba(129,204,189,1);
 	-webkit-box-shadow: 0px 3px 6px -2px rgba(129,204,189,1);
 	-moz-box-shadow: 0px 3px 6px -2px rgba(129,204,189,1);
+	-ms-box-shadow: 0px 3px 6px -2px rgba(129,204,189,1);
 	box-shadow: 0px 3px 6px -2px rgba(129,204,189,1);
 }
 
@@ -264,18 +266,21 @@ aside ul li:first-child{
 	border-top:1px solid rgba(129,204,189,1);
 	-webkit-box-shadow: 0px 3px 6px -2px rgba(129,204,189,1);
 	-moz-box-shadow: 0px 3px 6px -2px rgba(129,204,189,1);
+	-ms-box-shadow: 0px 3px 6px -2px rgba(129,204,189,1);
 	box-shadow: 0px 3px 6px -2px rgba(129,204,189,1);
 }
 aside ul li:hover{
 	border-bottom:1px solid rgba(242,165,12,1);
 	-webkit-box-shadow: 0px 3px 6px -2px rgba(242,165,12,1);
 	-moz-box-shadow: 0px 3px 6px -2px rgba(242,165,12,1);
+	-ms-box-shadow: 0px 3px 6px -2px rgba(242,165,12,1);
 	box-shadow: 0px 3px 6px -2px rgba(242,165,12,1);
 }
 aside ul li:first-child:hover{
 	border-top:1px solid rgba(242,165,12,1);
 	-webkit-box-shadow: 0px 3px 6px -2px rgba(242,165,12,1);
 	-moz-box-shadow: 0px 3px 6px -2px rgba(242,165,12,1);
+	-ms-box-shadow: 0px 3px 6px -2px rgba(242,165,12,1);
 	box-shadow: 0px 3px 6px -2px rgba(242,165,12,1);
 }
 aside ul li div{
@@ -310,6 +315,7 @@ table{
 	border-bottom:1px solid rgba(129,204,189,1);
 	-webkit-box-shadow: 0px 3px 6px -2px rgba(129,204,189,1);
 	-moz-box-shadow: 0px 3px 6px -2px rgba(129,204,189,1);
+	-ms-box-shadow: 0px 3px 6px -2px rgba(129,204,189,1);
 	box-shadow: 0px 3px 6px -2px rgba(129,204,189,1);
 	opacity:0;
 }
@@ -324,12 +330,14 @@ table tr{
 	border-bottom:1px solid rgba(129,204,189,1);
 	-webkit-box-shadow: 0px 3px 6px -2px rgba(129,204,189,1);
 	-moz-box-shadow: 0px 3px 6px -2px rgba(129,204,189,1);
+	-ms-box-shadow: 0px 3px 6px -2px rgba(129,204,189,1);
 	box-shadow: 0px 3px 6px -2px rgba(129,204,189,1);
 }
 table tr:hover{
 	border-bottom:1px solid rgba(242,165,12,1);
 	-webkit-box-shadow: 0px 3px 6px -2px rgba(242,165,12,1);
 	-moz-box-shadow: 0px 3px 6px -2px rgba(242,165,12,1);
+	-ms-box-shadow: 0px 3px 6px -2px rgba(242,165,12,1);
 	box-shadow: 0px 3px 6px -2px rgba(242,165,12,1);
 }
 table th, table td{
@@ -380,5 +388,3 @@ body{
 	background:white;
 }
 }		
-
-
