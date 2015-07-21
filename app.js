@@ -5,10 +5,10 @@ $(function(){
 
 	var weatherDiv = $('#weather'),
 		scroller = $('#scroller'),
-		location = $('h2');
-		expandedCurrentForecast = $('.expandedCurrentForecast ul');
-		mainForecast = $('.mainWeather');
-		slideNextWeather = $('.slideNextWeather');
+		location = $('h2'),
+		expandedCurrentForecast = $('.expandedCurrentForecast ul'),
+		slideNextWeather = $('.slideNextWeather'),
+		table = $('#daily');
 
 
 	if (navigator.geolocation) {
@@ -31,7 +31,6 @@ $(function(){
 
 			if(cache && cache2 && cache.timestamp && cache2.timestamp && cache.timestamp > d.getTime() - 30*60*1000){
 
-				// Get the offset from UTC (turn the offset minutes into ms)
 				var offset = d.getTimezoneOffset()*60*1000;
 				var city = cache.data.city.name;
 				var country = cache.data.city.country;
@@ -42,7 +41,7 @@ $(function(){
 					var localTime = new Date(this.dt*1000 - offset);
 
 					addWeather(
-						moment(localTime).format('D MMM'),	// We are using the moment.js library to format the date
+						moment(localTime).format('D MMM'),
 						convertTemperature(this.temp.max) + '°' + DEG,
 						this.weather[0].icon
 					);
@@ -77,12 +76,40 @@ $(function(){
                            
 				});
 				
+				var weatherAPI4 = 'http://api.openweathermap.org/data/2.5/forecast/daily?lat='+position.coords.latitude+
+									'&lon='+position.coords.longitude+'&cnt=10&lang=uk&callback=?'
+									
+									
+				$.getJSON(weatherAPI4, function(data) {
+					var items = [];
+					$.each(data.list, function() {
+					var localTime = new Date(this.dt*1000 - offset);
+						items.push('<tr>' + 
+										'<td>' + moment(localTime).format('D MMM') + '</td>' + 
+										'<td>' + convertTemperature(this.temp.night) + '°' + DEG + '</td>' +
+										'<td>' + convertTemperature(this.temp.morn) + '°' + DEG + '</td>' +
+										'<td>' + convertTemperature(this.temp.day) + '°' + DEG + '</td>' +
+										'<td>' + convertTemperature(this.temp.eve) + '°' + DEG + '</td>' +
+										'<td>' + '<img src="image/' + this.weather[0].icon + '.png" />' + '</td>' +
+										'<td>' + this.weather[0].description + '</td>' + 
+										'<td>' + this.humidity + ' %' + 
+										'<td>' + this.pressure + ' hPa' + 
+										'<td>' + this.speed + ' m/s' + '</tr>');
+					});
+					$('<tbody>', {
+						'class': 'daily',
+						html: items.join('')
+					}).appendTo('#daily');
+	
+				});
+				
 
 
 				location.html(city +', <b>' + country + '</b>');
 			
 
 				weatherDiv.addClass('loaded');
+				table.addClass('loaded');
 
 				showSlide(0);
 
