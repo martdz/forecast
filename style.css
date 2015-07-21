@@ -109,7 +109,7 @@ header a:hover{
 	top:15%;
 	left:10%;
 	width:500px;
-	height:430px;
+	height:435px;
 	padding:10px;
 	background-color:white;
 	border-radius:15px;
@@ -208,7 +208,7 @@ h3.currentDate{
 }
 .expandedCurrentForecast{
 	width:100%;
-	height:200px;
+	height:205px;
 }
 .expandedCurrentForecast ul li{
 	display:inline-block;
