@@ -361,7 +361,7 @@ table{
 	width:600px;
 }
 @keyframes moving{
-	from {left:200px;}
+	from {left:120px;}
 		to {left:0px;}
 }
 }		
