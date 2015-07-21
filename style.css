@@ -350,14 +350,9 @@ table img{
 @media (max-width:1075px){
 
 /*Animation*/
-
-#move_place{
-	display:none;
-	-webkit-animation: none;
-	-moz-animation: none;
-	-ms-animation: none;
-	-o-animation: none;
-	animation: none;
+@keyframes moving{
+	from {left:350px;}
+		to {left:0px;}
 }
 }
 @media (max-width:945px){
@@ -365,10 +360,22 @@ table{
 	font-size:15px;
 	width:600px;
 }
+@keyframes moving{
+	from {left:200px;}
+		to {left:0px;}
+}
 }		
 @media (max-width:630px){
 
 body{
 	background:white;
+}
+#move_place{
+	display:none;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-ms-animation: none;
+	-o-animation: none;
+	animation: none;
 }
 }		
