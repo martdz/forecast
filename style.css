@@ -42,7 +42,6 @@ body{
 	z-index:1000;
 	-webkit-animation: moving 50s linear infinite alternate;
 	-moz-animation: moving 50s linear infinite alternate;
-	-ms-animation: moving 50s linear infinite alternate;
 	animation: moving 50s linear infinite alternate;
 }
 @keyframes moving{
