@@ -200,7 +200,7 @@ h3.currentDate{
 	color:orange;
 }
 .mainWeather p{
-	font-family: Courier;
+	font-family: Courier, Cursive;
 	font-size:17px;
 	padding:5px;
 	clear:both;
