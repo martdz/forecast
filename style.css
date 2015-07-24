@@ -28,7 +28,7 @@ body{
 	background: -webkit-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
 	background: -o-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
 	background: -moz-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
-	background: -ms-radial-gradient(30% 30%, circle,yellow 3%, white 20%, blue);
+	background: -ms-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
 	background: radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
 }
 #move_place{
