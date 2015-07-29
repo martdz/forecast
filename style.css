@@ -8,6 +8,9 @@
 }
 
 /*General styles*/
+html{
+	height:100%;
+}
 a{
 	color:gray;
 }
@@ -23,29 +26,35 @@ body{
 	font-family: 'Times New Roman', serif;
 	font-size:16px;
 	width:100%;
-	height:750px;
 	color:#414141;
-	background: -webkit-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
-	background: -o-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
-	background: -moz-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
-	background: -ms-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
-	background: radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue);
+	background: -webkit-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue) fixed;
+	background: -o-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue) fixed;
+	background: -moz-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue) fixed;
+	background: -ms-radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue) fixed;
+	background: radial-gradient(70% 30%, circle,yellow 3%, white 20%, lightblue) fixed;
+}
+#moving_area{
+	position:absolute;
+	width:100%;
+	top:0;
+	left:0;
+	height:600px;
+	overflow:hidden;
 }
 #move_place{
-	position: absolute;
+	position: relative;
 	top: 100px;
-	left: 35px;
 	width: 500px;
 	height: 500px;
 	border-radius: 100%;
-	z-index:1000;
 	-webkit-animation: moving 50s linear infinite alternate;
 	-moz-animation: moving 50s linear infinite alternate;
 	animation: moving 50s linear infinite alternate;
+	z-index:1000;
 }
 @keyframes moving{
-	from {left:500px;}
-		to {left:0px;}
+	from {left:100%;}
+		to {left:0;}
 }
 #cloud_1{
 	position:absolute;
@@ -89,22 +98,21 @@ header a:hover{
 /*cityWeather Container*/
 
 #cityWeather{
-	position:absolute;
-	top:15%;
-	left:10%;
+	position:relative;
 	width:500px;
-	height:430px;
+	height:435px;
+	margin:30px auto;
 	padding:10px;
 	background-color: rgba(255, 255, 255, 0.9);
 	border-radius:15px;
 	overflow:hidden;
-	z-index:10000;
 	opacity:0;
 	border:1px solid rgba(129,204,189,1);
 	-webkit-box-shadow: -1px 1px 10px 4px rgba(129,204,189,1);
 	-moz-box-shadow: -1px 1px 10px 4px rgba(129,204,189,1);
 	-ms-box-shadow: -1px 1px 10px 4px rgba(129,204,189,1);
 	box-shadow: -1px 1px 10px 4px rgba(129,204,189,1);
+	z-index:10000;
 }
 #weather:before{
 	background: url("image/preloader2.gif") no-repeat center center #fff;
@@ -112,8 +120,8 @@ header a:hover{
 	width: 64px;
 	height: 64px;
 	position: absolute;
-	top: 50%;
-	left: 30%;
+	top: 40%;
+	left: 50%;
 	border-radius:100%;
 	display:block;
 }
@@ -192,7 +200,11 @@ h3.currentDate{
 }
 .expandedCurrentForecast{
 	width:100%;
-	height:200px;
+	height:205px;
+}
+.expandedCurrentForecast ul{
+	height:205px;
+	overflow:hidden;
 }
 .expandedCurrentForecast ul li{
 	display:inline-block;
@@ -346,22 +358,11 @@ table img{
 	height:50px;
 }
 }
-@media (max-width:1075px){
 
-/*Animation*/
-@keyframes moving{
-	from {left:350px;}
-		to {left:0px;}
-}
-}
 @media (max-width:945px){
 table{
 	font-size:15px;
 	width:600px;
-}
-@keyframes moving{
-	from {left:120px;}
-		to {left:0px;}
 }
 }		
 @media (max-width:630px){
