@@ -309,7 +309,6 @@ aside ul li div img{
 
 table{
 	font-size:18px;
-	width:900px;
 	height:auto;
 	margin:auto;
 	background-color: transparent;
@@ -343,7 +342,7 @@ table tr:hover{
 }
 table th, table td{
 	text-align:center;
-	padding:5px;
+	padding:5px 10px;
 }
 table td:first-child{
 	font-family:Verdana;
