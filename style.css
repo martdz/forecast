@@ -363,8 +363,17 @@ table img{
 	height:50px;
 }
 }
-
+@media (max-width:945px){
+table{
+	font-size:15px;
+	width:600px;
+}
+}		
 @media (max-width:630px){
+
+body{
+	background:white;
+}
 #move_place{
 	display:none;
 	-webkit-animation: none;
