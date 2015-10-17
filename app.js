@@ -62,7 +62,7 @@ $(function(){
 				});
 		
 				var weatherAPI3 = 'http://api.openweathermap.org/data/2.5/weather?lat='+position.coords.latitude+
-									'&lon='+position.coords.longitude+'&lang=uk'+'&callback=?'
+									'&lon='+position.coords.longitude+'&APPID=6088acf45a080582617afd36b135e0e1&lang=uk'+'&callback=?'
 									
 				$.getJSON(weatherAPI3, {}, function(json){  
 					
@@ -76,7 +76,7 @@ $(function(){
 				});
 				
 				var weatherAPI4 = 'http://api.openweathermap.org/data/2.5/forecast/daily?lat='+position.coords.latitude+
-									'&lon='+position.coords.longitude+'&cnt=10&lang=uk&callback=?'
+									'&lon='+position.coords.longitude+'&APPID=6088acf45a080582617afd36b135e0e1&cnt=10&lang=uk&callback=?'
 									
 									
 				$.getJSON(weatherAPI4, function(data) {
@@ -118,7 +118,7 @@ $(function(){
 			
 
 				var weatherAPI = 'http://api.openweathermap.org/data/2.5/forecast/daily?lat='+position.coords.latitude+
-									'&lon='+position.coords.longitude+'&cnt=16&&callback=?'
+									'&lon='+position.coords.longitude+'&APPID=6088acf45a080582617afd36b135e0e1&cnt=16&&callback=?'
 
 				$.getJSON(weatherAPI, function(response){
 
@@ -131,7 +131,7 @@ $(function(){
 				});
 				
 				var weatherAPI2 = 'http://api.openweathermap.org/data/2.5/forecast?lat='+position.coords.latitude+
-									'&lon='+position.coords.longitude+'&callback=?'
+									'&lon='+position.coords.longitude+'&APPID=6088acf45a080582617afd36b135e0e1&callback=?'
 
 				$.getJSON(weatherAPI2, function(response){
 
